@@ -1,2 +1,3 @@
 # angular_practice
-Learning Angular
+
+Simple task app using Angular and TypeScript
