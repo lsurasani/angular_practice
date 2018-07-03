@@ -1,5 +1,18 @@
 .card {
     border-radius: 0;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently supported by Chrome and Opera */
 }
 
 .card,
@@ -8,13 +21,18 @@
     border: none;
 }
 
-.card-footer {
-    text-align: right;
+.card.completed,
+.card.completed .card-footer {
+    background-color: #eee;
+    color: #ccc;
 }
 
-.card-block {
-    margin-left: .5rem;
-    margin-top: .5rem;
+.card.completed i {
+    color: green;
+}
+
+.card.completed .card-footer {
+    text-align: right;
 }
 
 i {

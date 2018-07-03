@@ -4,13 +4,19 @@ import { Task } from "./model/task";
 @Component({
     moduleId: module.id,
     selector: 'my-app',
-    templateUrl: 'app.component.html'
+    templateUrl: 'app.component.html',
+    styleUrls: [ 'app.component.css' ] 
 })
 
 export class AppComponent {
-    private tasks = [
+    private tasks: Task[] = [];
+    
+    private currentTask = new Task(null, false);
 
-    ]
-    private str: string;
+    addTask() {
+        let task = new Task(this.currentTask.content, this.currentTask.completed);
+        this.tasks.push(task);
+        this.currentTask.content = null;
+    }
 }
 
