@@ -1,0 +1,23 @@
+.card {
+    border-radius: 0;
+}
+
+.card,
+.card-footer {
+    background-color: #ffffA5;
+    border: none;
+}
+
+.card-footer {
+    text-align: right;
+}
+
+.card-block {
+    margin-left: .5rem;
+    margin-top: .5rem;
+}
+
+i {
+    color: #cc0000;
+    padding-right: .5rem;
+}
